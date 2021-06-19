@@ -20,7 +20,8 @@ void DrawF(Graphics g, Func<double, double> f, double XSCALE, double YSCALE, dou
   for (double x = xStart + XSTEP; x < xEnd + XSTEP; x += XSTEP)
   {
     double y = -f(x);
-    g.DrawLine(pen, (int)((x1 + xShift) * XSCALE + XCENTER), (int)(y1 * YSCALE + YCENTER), (int)((x + xShift) * XSCALE + XCENTER), (int)(y * YSCALE + YCENTER));
+    g.DrawLine(pen, (int)((x1 + xShift) * XSCALE + XCENTER), (int)(y1 * YSCALE + YCENTER), 
+      (int)((x + xShift) * XSCALE + XCENTER), (int)(y * YSCALE + YCENTER));
     x1 = x;
     y1 = y;
   }
