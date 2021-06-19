@@ -1,8 +1,8 @@
 ![demo.gif](demo.gif)
 
-A moving function in Windows Forms (.NET 5). Project was created in Visual Studio 2019.
+### A moving function in Windows Forms (.NET 5)
 
-1) Drawing any function using lines: (x, f(x)) - (x + s, f(x + s))
+1) Drawing function
 ```csharp
 void DrawF(Graphics g, Func<double, double> f, double XSCALE, double YSCALE, double xShift)
 {
@@ -28,7 +28,7 @@ void DrawF(Graphics g, Func<double, double> f, double XSCALE, double YSCALE, dou
 }
 ```
 
-2) Animate loop: infinite loop right
+2) Animation loop
 ```csharp
 for (double shift = 0; ; shift += .05)
 {
